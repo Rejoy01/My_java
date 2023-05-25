@@ -13,6 +13,8 @@ public class Second {
         Main obj2 = new Main();
         Second obj3 = new Second();
         System.out.println(obj2.x+obj3.z);
+        obj2.Speed();
+        //static method
         getValue();
     }
 
