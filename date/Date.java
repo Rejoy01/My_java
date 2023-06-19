@@ -4,6 +4,7 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Date {
     public static void main(String[] args) {
@@ -13,8 +14,16 @@ public class Date {
         LocalDate date = LocalDate.now();
         //represent a time
         LocalTime time = LocalTime.now();
-        System.out.println(myObj);
+        // DateTimeFormatter
+        DateTimeFormatter myFormatobj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        //yyyy-MM-dd
+        //dd/MM/yyyy
+        //dd-MMMM-YYYY
+        //E,MMMM dd yyyy
+        String formattedDate = myObj.format(myFormatobj);
+        System.out.println("Before formating :"+myObj);
         System.out.println(date);
         System.out.println(time);
+        System.out.println("Formatted Date: " + formattedDate);
     }
 }
