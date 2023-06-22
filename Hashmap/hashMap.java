@@ -6,8 +6,8 @@ public class hashMap {
     public static void main(String[] args) {
         hashMap city = new hashMap();
         
-        city.capitalCities.put("Kerala","Kochi");
-        city.capitalCities.put("UK","london");
+        city.capitalCities.put("India","Delhi");
+        city.capitalCities.put("UK","London");
         city.capitalCities.put("AmericA","Washington");
 
     city.capitalCities.forEach((key,value)->System.out.println("Country: "+key+" ,Capital : "+value ));
